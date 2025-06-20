@@ -16,6 +16,7 @@ type server struct {
 
 func (s *server) SayHello(ctx context.Context, req *pb.HelloRequest) (*pb.HelloResponse, error){
 	text := "hallo "
+	fmt.Printf("dapat req %s\n", req)
 	return &pb.HelloResponse{Message: text + req.Name}, nil
 }
 
