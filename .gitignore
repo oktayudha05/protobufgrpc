@@ -1,5 +1,3 @@
-tmp
-server/tmp
-client/tmp
-
-api/*.pb.go
+tmp/
+server/tmp/
+client/tmp/
