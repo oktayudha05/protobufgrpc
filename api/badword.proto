@@ -1,0 +1,18 @@
+syntax="proto3";
+
+package badword;
+
+option go_package="./api";
+
+service BadwordService{
+  rpc SayBadword (BadwordReq) returns (BadwordRes);
+}
+
+message BadwordReq{
+  string nama = 1;
+  int32 jmlKata = 2;
+}
+
+message BadwordRes{
+  string kalimat = 1;
+}
